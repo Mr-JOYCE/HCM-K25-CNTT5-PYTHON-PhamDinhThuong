@@ -1,4 +1,5 @@
 def main():
+    count_revenue = 0
     for i in range(1, 8):
         revenue = int(input(f"Nhập doanh thu ngày {i}: "))
         if i == 1:
@@ -6,7 +7,7 @@ def main():
         else:
             sum_revenue += revenue
         if revenue >= 5000000:
-            if 'count_revenue' in locals():
+            if count_revenue in locals():
                 count_revenue += 1
             else:
                 count_revenue = 1
